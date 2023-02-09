@@ -15,6 +15,7 @@ def function2(times):
 
 def function3(times):
 	currentTime = time.time()
+	elapsedTime = -1
 	for i in range(times):
 		t = threading.Thread(target = function1, name = 'thread1', args = [i])
 		t.start()
